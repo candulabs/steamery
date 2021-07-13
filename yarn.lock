@@ -1167,14 +1167,15 @@
     "@candulabs/models" "^0.5.6"
     react-style-object-to-css "^1.1.2"
 
-"@candulabs/core@^0.8.0-alpha.1":
-  version "0.8.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@candulabs/core/-/core-0.8.0-alpha.1.tgz#6e7ea696d9097231106a12f3b7f67f8acff910d9"
-  integrity sha512-8Vs0FCoic5RFzhfitZjuuqNHyBF9BBC/cx5f9BjMAIace88IQYTD27op3lR8F8YVk1xhV+5X3fTF0sIgnblbKQ==
+"@candulabs/core@^0.8.0-alpha.12":
+  version "0.8.0-alpha.12"
+  resolved "https://registry.yarnpkg.com/@candulabs/core/-/core-0.8.0-alpha.12.tgz#c0604d81a388209a9f858171edb8ed0a51653bf0"
+  integrity sha512-LXBbwamu0ovPTPGVCNJoYVH2Na2Wl6B/XDQ3NRtvZ3YIlKQMGUqFxqc2GRRe1vv+YclNevAzvKRzvcvIZS2/Ow==
   dependencies:
-    "@candulabs/eventing" "^0.8.0-alpha.1"
+    "@candulabs/eventing" "^0.8.0-alpha.12"
     dataloader "^2.0.0"
     preact "10.5.13"
+    react-player "^2.9.0"
     setimmediate "^1.0.5"
 
 "@candulabs/eventing@^0.5.6":
@@ -1185,10 +1186,10 @@
     lodash "^4.17.15"
     uuid "^3.3.2"
 
-"@candulabs/eventing@^0.8.0-alpha.1":
-  version "0.8.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@candulabs/eventing/-/eventing-0.8.0-alpha.1.tgz#28917f899e2c8d53edf6a155992ce08e42be1336"
-  integrity sha512-xsSSS6GgDOMc/qRksw4bGNu4wfiYKhYsx8f76ErRqXIucGw9wjKum7FjQym1whIss7mJZPp4LZ6qUGPGznV4nw==
+"@candulabs/eventing@^0.8.0-alpha.12":
+  version "0.8.0-alpha.12"
+  resolved "https://registry.yarnpkg.com/@candulabs/eventing/-/eventing-0.8.0-alpha.12.tgz#44e5c7d46fcb8a1c608cf976a84181a7374b0e46"
+  integrity sha512-CMOZT8TSMDj3P/ayXDe4udGYLjyYcjJC593Vh0xMwDV0HzEneI1Cjy2mDpJoVEISCpaz59IaE+rAZPlH07UX1A==
   dependencies:
     "@sentry/browser" "^5.30.0"
     lodash "^4.17.15"
@@ -1232,13 +1233,13 @@
     "@candulabs/models" "^0.5.0"
     "@candulabs/react-sdk" "^0.5.2"
 
-"@candulabs/react-sdk@0.8.0-alpha.1":
-  version "0.8.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@candulabs/react-sdk/-/react-sdk-0.8.0-alpha.1.tgz#a61ed7a41bbb415c77b62de501ab7724e1bc4e06"
-  integrity sha512-fDjxDTWFqxyJN6m9dBgXYqNwBbVFwcedZZGukOPFQqNvyCQv+CQ3jtCk/DuhOPM8A82q/w+pdseagLLh9R3M5w==
+"@candulabs/react-sdk@0.8.0-alpha.12":
+  version "0.8.0-alpha.12"
+  resolved "https://registry.yarnpkg.com/@candulabs/react-sdk/-/react-sdk-0.8.0-alpha.12.tgz#9e7199c29e42e950526b66ee31dfcfa1281c43e5"
+  integrity sha512-TPJikt3HEo+wB2NWjyhTZuqV2l1U34mx0niz9/K1kIKaQjhPeZOlgjlWYRwFwN3MO7/bmwJeDJsJMXgpALNgKw==
   dependencies:
-    "@candulabs/core" "^0.8.0-alpha.1"
-    "@candulabs/eventing" "^0.8.0-alpha.1"
+    "@candulabs/core" "^0.8.0-alpha.12"
+    "@candulabs/eventing" "^0.8.0-alpha.12"
     invariant "^2.2.4"
     lodash "^4.17.15"
     prop-types "^15.7.2"
@@ -10291,6 +10292,17 @@ react-player@^2.6.2:
   version "2.7.0"
   resolved "https://registry.npmjs.org/react-player/-/react-player-2.7.0.tgz#7f25c83b6111770adbae51679f7ad27fb0fa0269"
   integrity sha512-S+d9EfFCb2UlDBKf5U8jTgVQI3QCRfZ8k7kFUgpYLrSjLuowdV/NyZAKprplUNJEho1LmdwtqsDKg21kMIVymw==
+  dependencies:
+    deepmerge "^4.0.0"
+    load-script "^1.0.0"
+    memoize-one "^5.1.1"
+    prop-types "^15.7.2"
+    react-fast-compare "^3.0.1"
+
+react-player@^2.9.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/react-player/-/react-player-2.9.0.tgz#ef7fe7073434087565f00ff219824e1e02c4b046"
+  integrity sha512-jNUkTfMmUhwPPAktAdIqiBcVUKsFKrVGH6Ocutj6535CNfM91yrvWxHg6fvIX8Y/fjYUPoejddwh7qboNV9vGA==
   dependencies:
     deepmerge "^4.0.0"
     load-script "^1.0.0"
