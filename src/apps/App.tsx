@@ -38,7 +38,11 @@ const App = (props: Props) => {
         key={styleguideToRender}
         clientToken={(clientToken as string) || 'dR8ZTszcnp'}
         userId={(userId as string) || 'test-user'}
-        traits={{}}
+        traits={{
+          organizationName: 'Candu Inc',
+          primaryDomain: 'Steamery',
+          firstName: 'Claire',
+        }}
         styleguide={{ ...selectedStyleguide }}
       >
         <Ant>
