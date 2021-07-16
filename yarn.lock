@@ -1167,12 +1167,12 @@
     "@candulabs/models" "^0.5.6"
     react-style-object-to-css "^1.1.2"
 
-"@candulabs/core@^0.8.0-alpha.12":
-  version "0.8.0-alpha.12"
-  resolved "https://registry.yarnpkg.com/@candulabs/core/-/core-0.8.0-alpha.12.tgz#c0604d81a388209a9f858171edb8ed0a51653bf0"
-  integrity sha512-LXBbwamu0ovPTPGVCNJoYVH2Na2Wl6B/XDQ3NRtvZ3YIlKQMGUqFxqc2GRRe1vv+YclNevAzvKRzvcvIZS2/Ow==
+"@candulabs/core@^0.8.0-alpha.15":
+  version "0.8.0-alpha.15"
+  resolved "https://registry.yarnpkg.com/@candulabs/core/-/core-0.8.0-alpha.15.tgz#aa42e0622f8f97f5779962ac9fb455894a535623"
+  integrity sha512-l7mTof+mBUy1zz631Ee21m6IGaLS1ursP8cT3h5k0vzG1BNN1MMgVmFeoymoEHNa/iLuPrzezyWQbKr9FwMfAA==
   dependencies:
-    "@candulabs/eventing" "^0.8.0-alpha.12"
+    "@candulabs/eventing" "^0.8.0-alpha.15"
     dataloader "^2.0.0"
     preact "10.5.13"
     react-player "^2.9.0"
@@ -1186,10 +1186,10 @@
     lodash "^4.17.15"
     uuid "^3.3.2"
 
-"@candulabs/eventing@^0.8.0-alpha.12":
-  version "0.8.0-alpha.12"
-  resolved "https://registry.yarnpkg.com/@candulabs/eventing/-/eventing-0.8.0-alpha.12.tgz#44e5c7d46fcb8a1c608cf976a84181a7374b0e46"
-  integrity sha512-CMOZT8TSMDj3P/ayXDe4udGYLjyYcjJC593Vh0xMwDV0HzEneI1Cjy2mDpJoVEISCpaz59IaE+rAZPlH07UX1A==
+"@candulabs/eventing@^0.8.0-alpha.15":
+  version "0.8.0-alpha.15"
+  resolved "https://registry.yarnpkg.com/@candulabs/eventing/-/eventing-0.8.0-alpha.15.tgz#2a3cd49249bed074bca6e9e758ee2034c9c7d746"
+  integrity sha512-fpX3EdsbIZzXa+ClsEIDUUobVZTfbadT1GCzPaPXLHxooXmbNwsKkEWskxzXJszVl6bKIsKPYCc4eX8nrx2r8Q==
   dependencies:
     "@sentry/browser" "^5.30.0"
     lodash "^4.17.15"
@@ -1233,18 +1233,6 @@
     "@candulabs/models" "^0.5.0"
     "@candulabs/react-sdk" "^0.5.2"
 
-"@candulabs/react-sdk@0.8.0-alpha.12":
-  version "0.8.0-alpha.12"
-  resolved "https://registry.yarnpkg.com/@candulabs/react-sdk/-/react-sdk-0.8.0-alpha.12.tgz#9e7199c29e42e950526b66ee31dfcfa1281c43e5"
-  integrity sha512-TPJikt3HEo+wB2NWjyhTZuqV2l1U34mx0niz9/K1kIKaQjhPeZOlgjlWYRwFwN3MO7/bmwJeDJsJMXgpALNgKw==
-  dependencies:
-    "@candulabs/core" "^0.8.0-alpha.12"
-    "@candulabs/eventing" "^0.8.0-alpha.12"
-    invariant "^2.2.4"
-    lodash "^4.17.15"
-    prop-types "^15.7.2"
-    react-player "^2.6.2"
-
 "@candulabs/react-sdk@^0.5.2":
   version "0.5.6"
   resolved "https://registry.npmjs.org/@candulabs/react-sdk/-/react-sdk-0.5.6.tgz#75eaed0e39b0e75c60488366832d06d078535b07"
@@ -1253,6 +1241,18 @@
     "@candulabs/core" "^0.5.6"
     "@candulabs/eventing" "^0.5.6"
     "@candulabs/models" "^0.5.6"
+    invariant "^2.2.4"
+    lodash "^4.17.15"
+    prop-types "^15.7.2"
+    react-player "^2.6.2"
+
+"@candulabs/react-sdk@^0.8.0-alpha.15":
+  version "0.8.0-alpha.15"
+  resolved "https://registry.yarnpkg.com/@candulabs/react-sdk/-/react-sdk-0.8.0-alpha.15.tgz#7fbb041b1e09e0a7df021490f2630d684a6d37ca"
+  integrity sha512-NrzceYMpr/ENd3FdLUMR6wLKL/zMSsDDAVAqOdwwTGN80HaeE3FxRVJikwJYPyBG4akSYLJ/J8nC8CueKUOhJw==
+  dependencies:
+    "@candulabs/core" "^0.8.0-alpha.15"
+    "@candulabs/eventing" "^0.8.0-alpha.15"
     invariant "^2.2.4"
     lodash "^4.17.15"
     prop-types "^15.7.2"
