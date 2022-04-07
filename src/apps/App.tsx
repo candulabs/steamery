@@ -1,7 +1,6 @@
 import React, { FunctionComponent, useEffect } from 'react';
 import queryString from 'qs';
 import { connect } from 'react-redux';
-import { CanduProvider } from '@candulabs/react-sdk';
 
 import Ant from './Ant';
 
@@ -34,21 +33,9 @@ const App = (props: Props) => {
   return (
     <React.Fragment>
       <AdditionalStyles />
-      <CanduProvider
-        key={styleguideToRender}
-        clientToken={(clientToken as string) || 'dR8ZTszcnp'}
-        userId={(userId as string) || 'test-user'}
-        traits={{
-          organizationName: 'Candu Inc',
-          primaryDomain: 'Steamery',
-          firstName: 'Claire',
-        }}
-        styleguide={{ ...selectedStyleguide }}
-      >
-        <Ant>
-          <Routes />
-        </Ant>
-      </CanduProvider>
+      <Ant>
+        <Routes />
+      </Ant>
     </React.Fragment>
   );
 };

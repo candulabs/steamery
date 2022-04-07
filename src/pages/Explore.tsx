@@ -1,7 +1,6 @@
 import * as React from 'react';
 import queryString from 'qs';
 import styled from 'styled-components';
-import { Content } from '@candulabs/react-sdk';
 import { Switch, Route } from 'react-router-dom';
 
 import { ExploreDraft } from './components';
@@ -19,20 +18,20 @@ const Explore = () => (
         <ExploreDraft />
       </Route>
       <Route path="/test-styleguide">
-        <Content slug="all-nodes" />
+        <div id="all-nodes" />
       </Route>
       <Route path="/launch-darkly">
-        <Content slug="launch-darkly" />
+        <div id="launch-darkly" />
       </Route>
       <Route path="/sdk-test">
         {({ location }) => {
           const portalSlug = queryString.parse(location.search.replace('?', '')).portalSlug;
 
-          return <Content slug={(portalSlug as string) || 'datadog-test-portal'} />;
+          return <div id={(portalSlug as string) || 'datadog-test-portal'} />;
         }}
       </Route>
       <Route path="/">
-        <Content slug="explore-center" />
+        <div id="explore-center" />
       </Route>
     </Switch>
   </Container>

@@ -1158,106 +1158,6 @@
     classnames "^2.2"
     tslib "~1.10.0"
 
-"@candulabs/core@^0.5.6":
-  version "0.5.6"
-  resolved "https://registry.yarnpkg.com/@candulabs/core/-/core-0.5.6.tgz#8d7b80974eb82661c6b685c7a922a94d43bb3770"
-  integrity sha512-jhhMH7Hb8W5dKbLzpaCzoM1AODrjq0eflvh9ZkRK3Dx08ApFnH5qEudX1CjR1GaN9Tmbz0F1hXZAZybLfSzCKw==
-  dependencies:
-    "@candulabs/eventing" "^0.5.6"
-    "@candulabs/models" "^0.5.6"
-    react-style-object-to-css "^1.1.2"
-
-"@candulabs/core@^0.8.9":
-  version "0.8.9"
-  resolved "https://registry.yarnpkg.com/@candulabs/core/-/core-0.8.9.tgz#5557e2d2906e8914042c08a59cca697a4e0b3535"
-  integrity sha512-hH5hBkfAgcAV0Y1qwcjYsguhYFbYicRRkWGXoRg+Z4i55tHaEAOS+jPZW8JdoSRDer0VSAkONdPJEeiLVpkJ0w==
-  dependencies:
-    "@candulabs/eventing" "^0.8.9"
-    dataloader "^2.0.0"
-    preact "10.5.13"
-    react-player "^2.9.0"
-    setimmediate "^1.0.5"
-
-"@candulabs/eventing@^0.5.6":
-  version "0.5.6"
-  resolved "https://registry.yarnpkg.com/@candulabs/eventing/-/eventing-0.5.6.tgz#7b05c3299ea127f83996df912e9c6c3579c8ff2f"
-  integrity sha512-98/wJa2jA8W6f9n7uEuylwGUNwF8OvJowdAVga++1qefUkIBpKzwWiZyf7W+fSfjoaj+LMTn/xccqVDWEqsbiQ==
-  dependencies:
-    lodash "^4.17.15"
-    uuid "^3.3.2"
-
-"@candulabs/eventing@^0.8.9":
-  version "0.8.9"
-  resolved "https://registry.yarnpkg.com/@candulabs/eventing/-/eventing-0.8.9.tgz#c77cd7d23fd816c7d3f283b754b8df53cdad0ddd"
-  integrity sha512-e2TCi2GChMFVBrvriK3IL5pZS5PRrGN854m1Gs8P30BTZlCsZn1s7t/M0VaStxIBbrWazL9owtF/Hrd2FDlMdA==
-  dependencies:
-    "@sentry/browser" "^5.30.0"
-    lodash "^4.17.15"
-    uuid "^3.3.2"
-
-"@candulabs/models@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.npmjs.org/@candulabs/models/-/models-0.5.0.tgz#c4d92e4c22c2d88081614882c0e96a16d4ed1dfc"
-  integrity sha512-134KNUYm2+OJn16wah0fUV3eJOFPsXsJqxQTYUFkn94LG5b5UWAUUUb9SXqWrzQJ3j1PTnPxavG97fKeKpmuQg==
-  dependencies:
-    lodash "^4.17.15"
-
-"@candulabs/models@^0.5.6":
-  version "0.5.6"
-  resolved "https://registry.npmjs.org/@candulabs/models/-/models-0.5.6.tgz#4c8d5d1422b3f5c08ffbbbe961bdb93233578153"
-  integrity sha512-a/z7KjJY2Ps3uVIgRORZiCxWcKS6gCw2n6hpBJRXaAvar+B8e5ypY3u0hGn8QUx+ZKrP9dx/KAtuAaQ+r2YvKw==
-  dependencies:
-    lodash "^4.17.15"
-
-"@candulabs/react-antd-styleguide@0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@candulabs/react-antd-styleguide/-/react-antd-styleguide-0.5.2.tgz#479e0c017229ad0c1c8f3f7748dbde1b4d75b224"
-  integrity sha512-IU940W4QuX3psEC26LQ/7pl5QOyMPaSdTX8UBDlCK2FSHilNlnG7ll3LCSakU6w8/wNnky6W7A6yWPwA1PvO1Q==
-  dependencies:
-    "@candulabs/models" "^0.5.0"
-    "@candulabs/react-sdk" "^0.5.2"
-
-"@candulabs/react-bootstrap-styleguide@0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@candulabs/react-bootstrap-styleguide/-/react-bootstrap-styleguide-0.5.2.tgz#3f1e6fbd0fd23492c16cdab5bf1360ccda07f479"
-  integrity sha512-p6VxuiwUL8IWuhSDLLgWH/fMAr8dLHv4tRj5OOxgondz3zBNPH5Y0iDeup4xXZ8+EtFjLmrzpXcbA/vZgMz4HQ==
-  dependencies:
-    "@candulabs/models" "^0.5.0"
-    "@candulabs/react-sdk" "^0.5.2"
-
-"@candulabs/react-evergreen-styleguide@0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@candulabs/react-evergreen-styleguide/-/react-evergreen-styleguide-0.5.2.tgz#6e2edb51e9e36e99639d52391b2d7af556e77771"
-  integrity sha512-fHfIfa3f8koxmknJifJNYeh/94rOhg9J0LvwB2R9/Uryxp7OESN4LVl7MmRDvPM4yRgB6kOBdg6A83hRaIXLJg==
-  dependencies:
-    "@candulabs/models" "^0.5.0"
-    "@candulabs/react-sdk" "^0.5.2"
-
-"@candulabs/react-sdk@^0.5.2":
-  version "0.5.6"
-  resolved "https://registry.npmjs.org/@candulabs/react-sdk/-/react-sdk-0.5.6.tgz#75eaed0e39b0e75c60488366832d06d078535b07"
-  integrity sha512-I34L/c857vSLdla0qoW0fhP+sd3x8OPClOota/gwSgyv8OwFqznhdrRfu1FRTtRfQwufAsSsH2t3VvfT8YNOUQ==
-  dependencies:
-    "@candulabs/core" "^0.5.6"
-    "@candulabs/eventing" "^0.5.6"
-    "@candulabs/models" "^0.5.6"
-    invariant "^2.2.4"
-    lodash "^4.17.15"
-    prop-types "^15.7.2"
-    react-player "^2.6.2"
-
-"@candulabs/react-sdk@^0.8.9":
-  version "0.8.9"
-  resolved "https://registry.yarnpkg.com/@candulabs/react-sdk/-/react-sdk-0.8.9.tgz#85ae8c095c9c3af6d98e53c3829df92c5770f527"
-  integrity sha512-jfZ81e7ASbtfMKiRW9oMdZH4JqYZvSqiAPwhq8YBqwtTE7Av6BnMlEf1yiaYxzPEdyIpzOP0xPKDYzQQa6bNgA==
-  dependencies:
-    "@candulabs/core" "^0.8.9"
-    "@candulabs/eventing" "^0.8.9"
-    invariant "^2.2.4"
-    lodash "^4.17.15"
-    prop-types "^15.7.2"
-    react-player "^2.6.2"
-
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"
@@ -1796,58 +1696,6 @@
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
-
-"@sentry/browser@^5.30.0":
-  version "5.30.0"
-  resolved "https://registry.npmjs.org/@sentry/browser/-/browser-5.30.0.tgz#c28f49d551db3172080caef9f18791a7fd39e3b3"
-  integrity sha512-rOb58ZNVJWh1VuMuBG1mL9r54nZqKeaIlwSlvzJfc89vyfd7n6tQ1UXMN383QBz/MS5H5z44Hy5eE+7pCrYAfw==
-  dependencies:
-    "@sentry/core" "5.30.0"
-    "@sentry/types" "5.30.0"
-    "@sentry/utils" "5.30.0"
-    tslib "^1.9.3"
-
-"@sentry/core@5.30.0":
-  version "5.30.0"
-  resolved "https://registry.npmjs.org/@sentry/core/-/core-5.30.0.tgz#6b203664f69e75106ee8b5a2fe1d717379b331f3"
-  integrity sha512-TmfrII8w1PQZSZgPpUESqjB+jC6MvZJZdLtE/0hZ+SrnKhW3x5WlYLvTXZpcWePYBku7rl2wn1RZu6uT0qCTeg==
-  dependencies:
-    "@sentry/hub" "5.30.0"
-    "@sentry/minimal" "5.30.0"
-    "@sentry/types" "5.30.0"
-    "@sentry/utils" "5.30.0"
-    tslib "^1.9.3"
-
-"@sentry/hub@5.30.0":
-  version "5.30.0"
-  resolved "https://registry.npmjs.org/@sentry/hub/-/hub-5.30.0.tgz#2453be9b9cb903404366e198bd30c7ca74cdc100"
-  integrity sha512-2tYrGnzb1gKz2EkMDQcfLrDTvmGcQPuWxLnJKXJvYTQDGLlEvi2tWz1VIHjunmOvJrB5aIQLhm+dcMRwFZDCqQ==
-  dependencies:
-    "@sentry/types" "5.30.0"
-    "@sentry/utils" "5.30.0"
-    tslib "^1.9.3"
-
-"@sentry/minimal@5.30.0":
-  version "5.30.0"
-  resolved "https://registry.npmjs.org/@sentry/minimal/-/minimal-5.30.0.tgz#ce3d3a6a273428e0084adcb800bc12e72d34637b"
-  integrity sha512-BwWb/owZKtkDX+Sc4zCSTNcvZUq7YcH3uAVlmh/gtR9rmUvbzAA3ewLuB3myi4wWRAMEtny6+J/FN/x+2wn9Xw==
-  dependencies:
-    "@sentry/hub" "5.30.0"
-    "@sentry/types" "5.30.0"
-    tslib "^1.9.3"
-
-"@sentry/types@5.30.0":
-  version "5.30.0"
-  resolved "https://registry.npmjs.org/@sentry/types/-/types-5.30.0.tgz#19709bbe12a1a0115bc790b8942917da5636f402"
-  integrity sha512-R8xOqlSTZ+htqrfteCWU5Nk0CDN5ApUTvrlvBuiH1DyP6czDZ4ktbZB0hAgBlVcK0U+qpD3ag3Tqqpa5Q67rPw==
-
-"@sentry/utils@5.30.0":
-  version "5.30.0"
-  resolved "https://registry.npmjs.org/@sentry/utils/-/utils-5.30.0.tgz#9a5bd7ccff85ccfe7856d493bffa64cabc41e980"
-  integrity sha512-zaYmoH0NWWtvnJjC9/CBseXMtKHm/tm40sz3YfJRxeQjyzRqNQPgivpd9R/oDJCYj999mzdW382p/qi2ypjLww==
-  dependencies:
-    "@sentry/types" "5.30.0"
-    tslib "^1.9.3"
 
 "@svgr/babel-plugin-add-jsx-attribute@^4.2.0":
   version "4.2.0"
@@ -4294,11 +4142,6 @@ data-urls@^1.0.0, data-urls@^1.1.0:
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
 
-dataloader@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/dataloader/-/dataloader-2.0.0.tgz#41eaf123db115987e21ca93c005cd7753c55fe6f"
-  integrity sha512-YzhyDAwA4TaQIhM5go+vCLmU0UikghC/t9DTQYZR2M/UvZ1MdOhPezSDZcjj9uqQJOMqjLcpWtyW2iNINdlatQ==
-
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -4346,11 +4189,6 @@ deep-is@~0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
   integrity sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=
-
-deepmerge@^4.0.0:
-  version "4.2.2"
-  resolved "https://registry.npmjs.org/deepmerge/-/deepmerge-4.2.2.tgz#44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955"
-  integrity sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==
 
 default-gateway@^4.2.0:
   version "4.2.0"
@@ -7496,11 +7334,6 @@ load-json-file@^4.0.0:
     pify "^3.0.0"
     strip-bom "^3.0.0"
 
-load-script@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/load-script/-/load-script-1.0.0.tgz#0491939e0bee5643ee494a7e3da3d2bac70c6ca4"
-  integrity sha1-BJGTngvuVkPuSUp+PaPSuscMbKQ=
-
 loader-fs-cache@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/loader-fs-cache/-/loader-fs-cache-1.0.3.tgz#f08657646d607078be2f0a032f8bd69dd6f277d9"
@@ -7729,11 +7562,6 @@ mem@^4.0.0:
     map-age-cleaner "^0.1.1"
     mimic-fn "^2.0.0"
     p-is-promise "^2.0.0"
-
-memoize-one@^5.1.1:
-  version "5.1.1"
-  resolved "https://registry.npmjs.org/memoize-one/-/memoize-one-5.1.1.tgz#047b6e3199b508eaec03504de71229b8eb1d75c0"
-  integrity sha512-HKeeBpWvqiVJD57ZUAsJNm71eHTykffzcLZVYWiVfQeI1rJtuEaS7hQiEpWfVVk18donPwJEcFKIkCmPJNOhHA==
 
 memory-fs@^0.4.1:
   version "0.4.1"
@@ -9458,11 +9286,6 @@ postcss@^7, postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.16, po
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
-preact@10.5.13:
-  version "10.5.13"
-  resolved "https://registry.yarnpkg.com/preact/-/preact-10.5.13.tgz#85f6c9197ecd736ce8e3bec044d08fd1330fa019"
-  integrity sha512-q/vlKIGNwzTLu+jCcvywgGrt+H/1P/oIRSD6mV4ln3hmlC+Aa34C7yfPI4+5bzW8pONyVXYS7SvXosy2dKKtWQ==
-
 prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
@@ -10252,11 +10075,6 @@ react-event-listener@^0.5.1:
     prop-types "^15.6.0"
     warning "^3.0.0"
 
-react-fast-compare@^3.0.1:
-  version "3.2.0"
-  resolved "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
-  integrity sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
-
 react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4, react-is@^16.9.0:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -10287,28 +10105,6 @@ react-outside-click-handler@^1.3.0:
     document.contains "^1.0.1"
     object.values "^1.1.0"
     prop-types "^15.7.2"
-
-react-player@^2.6.2:
-  version "2.7.0"
-  resolved "https://registry.npmjs.org/react-player/-/react-player-2.7.0.tgz#7f25c83b6111770adbae51679f7ad27fb0fa0269"
-  integrity sha512-S+d9EfFCb2UlDBKf5U8jTgVQI3QCRfZ8k7kFUgpYLrSjLuowdV/NyZAKprplUNJEho1LmdwtqsDKg21kMIVymw==
-  dependencies:
-    deepmerge "^4.0.0"
-    load-script "^1.0.0"
-    memoize-one "^5.1.1"
-    prop-types "^15.7.2"
-    react-fast-compare "^3.0.1"
-
-react-player@^2.9.0:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/react-player/-/react-player-2.9.0.tgz#ef7fe7073434087565f00ff219824e1e02c4b046"
-  integrity sha512-jNUkTfMmUhwPPAktAdIqiBcVUKsFKrVGH6Ocutj6535CNfM91yrvWxHg6fvIX8Y/fjYUPoejddwh7qboNV9vGA==
-  dependencies:
-    deepmerge "^4.0.0"
-    load-script "^1.0.0"
-    memoize-one "^5.1.1"
-    prop-types "^15.7.2"
-    react-fast-compare "^3.0.1"
 
 react-redux@^7.1.3:
   version "7.2.0"
@@ -10430,11 +10226,6 @@ react-slick@~0.25.2:
     json2mq "^0.2.0"
     lodash.debounce "^4.0.8"
     resize-observer-polyfill "^1.5.0"
-
-react-style-object-to-css@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.npmjs.org/react-style-object-to-css/-/react-style-object-to-css-1.1.2.tgz#3e97da92c9edf8190e30f4b27026e74285940498"
-  integrity sha512-+5MFULqCCj7wwJJ/ISKFP91ZlHVF1Rv8o0neiTKvt21XDTU5e34tc8hy+XPLeYWYOupdHt25HxxwocvYm3HM6A==
 
 react-tiny-virtual-list@^2.1.4:
   version "2.2.0"
@@ -11951,11 +11742,6 @@ tslib@^1.10.0, tslib@^1.11.1, tslib@^1.8.1, tslib@^1.9.0:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
   integrity sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
-
-tslib@^1.9.3:
-  version "1.14.1"
-  resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
-  integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
 tslib@~1.10.0:
   version "1.10.0"
