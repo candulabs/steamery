@@ -1,5 +1,4 @@
 import React, { FunctionComponent, useEffect } from 'react';
-import queryString from 'qs';
 import { connect } from 'react-redux';
 
 import Ant from './Ant';
@@ -18,17 +17,15 @@ interface Props {
 const App = (props: Props) => {
   const { initAuth, styles } = props;
   const styleguideToRender = styles.styleguide || styleguides[0].id;
-  const { styleguide: selectedStyleguide, Additional } = styleguides.find(
-    ({ id }) => id === styleguideToRender,
-  ) || { styleguide: {} };
+  const { Additional } = styleguides.find(({ id }) => id === styleguideToRender) || {
+    styleguide: {},
+  };
 
   const AdditionalStyles = Additional as FunctionComponent<any>;
 
   useEffect(() => {
     initAuth();
   }, [initAuth]);
-
-  const { clientToken, userId } = queryString.parse(window.location.search.replace('?', ''));
 
   return (
     <React.Fragment>
