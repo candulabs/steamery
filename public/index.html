@@ -99,10 +99,20 @@
       const isProduction = !window.location.host.includes('localhost');
       const searchParams = new URLSearchParams(window.location.search);
       const paramsClientToken = searchParams.get('clientToken');
-      let clientToken;
+      let clientToken, userId;
+
+      if (searchParams.has('userId')) {
+        userId = searchParams.get('userId');
+        localStorage.setItem('userId', userId);
+      } else if (localStorage.getItem('userId')) {
+        userId = localStorage.getItem('userId');
+      }
 
       if (paramsClientToken) {
         clientToken = paramsClientToken;
+        localStorage.setItem('clientToken', paramsClientToken);
+      } else if (localStorage.getItem('clientToken')) {
+        clientToken = localStorage.getItem('clientToken');
       } else if (isProduction) {
         clientToken = 'dR8ZTszcnp';
       } else {
@@ -121,6 +131,7 @@
         d.head.appendChild(script);
       })(document, {
         clientToken,
+        userId,
         traits: null,
         variables: null,
         callbacks: null,
