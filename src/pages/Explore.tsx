@@ -11,30 +11,34 @@ const Container = styled.div`
   padding-top: 56px;
 `;
 
-const Explore = () => (
-  <Container>
-    <Switch>
-      <Route path="/draft">
-        <ExploreDraft />
-      </Route>
-      <Route path="/test-styleguide">
-        <div id="all-nodes" />
-      </Route>
-      <Route path="/launch-darkly">
-        <div id="launch-darkly" />
-      </Route>
-      <Route path="/sdk-test">
-        {({ location }) => {
-          const portalSlug = queryString.parse(location.search.replace('?', '')).portalSlug;
+const Explore = () => {
+  return (
+    <Container>
+      <Switch>
+        <Route path="/draft">
+          <ExploreDraft />
+        </Route>
+        <Route path="/test-styleguide">
+          <div id="all-nodes" />
+        </Route>
+        <Route path="/launch-darkly">
+          <div id="launch-darkly" />
+        </Route>
+        <Route path="/sdk-test">
+          {({ location }) => {
+            const portalSlug = queryString.parse(location.search.replace('?', '')).portalSlug;
 
-          return <div id={(portalSlug as string) || 'datadog-test-portal'} />;
-        }}
-      </Route>
-      <Route path="/">
-        <div id="explore-center" />
-      </Route>
-    </Switch>
-  </Container>
-);
+            return <div id={(portalSlug as string) || 'datadog-test-portal'} />;
+          }}
+        </Route>
+        <Route path="/">
+          <div>
+            <h1>Explore Center</h1>
+          </div>
+        </Route>
+      </Switch>
+    </Container>
+  );
+};
 
 export default Explore;

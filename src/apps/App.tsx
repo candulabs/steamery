@@ -42,4 +42,10 @@ const mapStateToProps = (state: ReduxState) => ({
   styles: state.styles,
 });
 
+declare global {
+  interface Window {
+    storageKey: string;
+  }
+}
+
 export default connect(mapStateToProps, { initAuth })(App);
