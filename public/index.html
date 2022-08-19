@@ -94,49 +94,76 @@
           z.parentNode.insertBefore(y, z);
         })(window, document, 'script', 'pendo');
       })('379fefbf-3947-4e20-4d58-b6b5c43386f4');
+      window.storageKey = 'test_values';
     </script>
     <script>
-      const isProduction = !window.location.host.includes('localhost');
+      const storageValues = JSON.parse(localStorage.getItem(window.storageKey)) || {};
+      const toStorage = storageValues;
+
+      let isProduction = !window.location.host.includes('localhost');
       const searchParams = new URLSearchParams(window.location.search);
       const paramsClientToken = searchParams.get('clientToken');
-      let clientToken, userId;
+      let clientToken, userId, sdkVersion;
+
+      if (searchParams.has('isProduction')) {
+        isProduction = searchParams.get('isProduction');
+        toStorage.isProduction = isProduction;
+      } else if (storageValues.isProduction) {
+        isProduction = storageValues.isProduction;
+      }
 
       if (searchParams.has('userId')) {
         userId = searchParams.get('userId');
-        localStorage.setItem('userId', userId);
-      } else if (localStorage.getItem('userId')) {
-        userId = localStorage.getItem('userId');
+        toStorage.userId = userId;
+      } else if (storageValues.userId) {
+        userId = storageValues.userId;
       }
 
       if (paramsClientToken) {
         clientToken = paramsClientToken;
-        localStorage.setItem('clientToken', paramsClientToken);
-      } else if (localStorage.getItem('clientToken')) {
-        clientToken = localStorage.getItem('clientToken');
+        toStorage.clientToken = paramsClientToken;
+      } else if (storageValues.clientToken) {
+        clientToken = storageValues.clientToken;
       } else if (isProduction) {
         clientToken = 'dR8ZTszcnp';
       } else {
-        clientToken = 'TestClientToken';
+        clientToken = 'dR8ZTszcnp';
       }
+
+      if (searchParams.has('sdkVersion')) {
+        sdkVersion = searchParams.get('sdkVersion');
+        toStorage.sdkVersion = searchParams.get('sdkVersion');
+      } else if (storageValues.sdkVersion) {
+        sdkVersion = storageValues.sdkVersion;
+      } else {
+        sdkVersion = 'latest';
+      }
+
+      localStorage.setItem(window.storageKey, JSON.stringify(toStorage));
 
       (function(d, params) {
         const script = d.createElement('script');
         script.setAttribute(
           'src',
           (isProduction
-            ? 'https://cdn.candu.ai/sdk/latest/candu.umd.js?token='
-            : 'http://localhost:7700/candu.umd.js?token=') + params.clientToken,
+            ? `https://cdn.candu.ai/sdk/${sdkVersion}/candu.umd.js?token=`
+            : 'http://localhost:7700/candu.umd.js?token=') + clientToken,
         );
-        script.onload = () => Candu.init(params);
+        script.onload = () => {
+          Candu.init(params);
+        };
         d.head.appendChild(script);
       })(document, {
         clientToken,
         userId,
-        traits: null,
+        traits: {
+          hs_searchable_calculated_phone_number: '123s',
+        },
         variables: null,
         callbacks: null,
       });
     </script>
+
     <title>Candu Showcase</title>
   </head>
 

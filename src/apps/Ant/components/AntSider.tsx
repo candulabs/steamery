@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
-import { Layout, Menu, Icon, Typography } from 'antd';
+import { Layout, Menu, Icon, Typography, Button } from 'antd';
 import { Link, useLocation } from 'react-router-dom';
 
 import '../styles/sider.css';
@@ -21,17 +21,16 @@ const Brand = styled.div`
   overflow: hidden;
 `;
 
+const Flex = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
 interface OwnProps {
   collapsed: boolean;
 }
 
-interface ReduxProps {
-  // TODO type auth state
-  auth: any;
-  logout: () => void;
-}
-
-type Props = OwnProps & ReduxProps;
+type Props = OwnProps;
 
 const keyMap = {
   '1': '/',
@@ -45,9 +44,14 @@ const locationToKey = (location) => {
   return [activeKey];
 };
 
-const AntSider = ({ collapsed, auth, logout }: Props) => {
-  const handleLogout = () => logout();
+const AntSider = ({ collapsed }: Props) => {
+  const handleReset = () => {
+    localStorage.setItem(window.storageKey, '{}');
+    window.location.href = window.location.origin;
+  };
   const location = useLocation();
+
+  const storageItems = JSON.parse(localStorage.getItem(window.storageKey) || '');
 
   return (
     <Sider trigger={null} collapsible collapsed={collapsed} className="candu-ant-sider">
@@ -96,23 +100,30 @@ const AntSider = ({ collapsed, auth, logout }: Props) => {
           <span>Documents</span>
         </Menu.Item>
         <div style={{ flex: '1 1' }} />
-        <Menu.Item key="6">
-          <Icon type="bell" />
-          <span>Alerts</span>
-        </Menu.Item>
-        <Menu.Item key="7">
-          <Icon type="compass" />
-          <span>Explore</span>
-        </Menu.Item>
-        <Menu.Item key="8">
-          <Icon type="setting" />
-          <span>Settings</span>
-        </Menu.Item>
+        {(storageItems?.clientToken || storageItems?.userId || storageItems?.sdkVersion) && (
+          <div style={{ lineHeight: '26px', padding: '0px 16px' }} key="6">
+            <Flex>
+              <small>Client Token:</small>
+              <strong>{storageItems.clientToken || '-- --'}</strong>
+            </Flex>
+            <Flex>
+              <small>User Id:</small>
+              <strong>{storageItems.userId || '-- --'}</strong>
+            </Flex>
+            <Flex>
+              <small>SDK Version:</small>
+              <strong>{storageItems.sdkVersion || '-- --'}</strong>
+            </Flex>
 
-        <Menu.Item disabled={!auth.uid} onClick={handleLogout}>
-          <Icon type="poweroff" />
-          <span>Log out</span>
-        </Menu.Item>
+            <Button
+              style={{ width: '100%', margin: '5px auto 15px' }}
+              type="primary"
+              onClick={handleReset}
+            >
+              Reset
+            </Button>
+          </div>
+        )}
       </Menu>
     </Sider>
   );
