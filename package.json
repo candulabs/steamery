@@ -10,7 +10,7 @@
     "antd": "3.26.7",
     "evergreen-ui": "^4.23.2",
     "firebase": "^7.8.1",
-    "qs": "6.9.1",
+    "qs": "6.9.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-outside-click-handler": "^1.3.0",
