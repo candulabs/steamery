@@ -19,7 +19,7 @@ const Explore = () => {
           <ExploreDraft />
         </Route>
         <Route path="/test-styleguide">
-          <div id="all-nodes" />
+          <div id="all-nodes" style={{ display: 'flex', flexGrow: 1 }} />
         </Route>
         <Route path="/launch-darkly">
           <div id="launch-darkly" />
@@ -32,7 +32,7 @@ const Explore = () => {
           }}
         </Route>
         <Route path="/">
-          <div>
+          <div id="explore-center">
             <h1>Explore Center</h1>
           </div>
         </Route>
